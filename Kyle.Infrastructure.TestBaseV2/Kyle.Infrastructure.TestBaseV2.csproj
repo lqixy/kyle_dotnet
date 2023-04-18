@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kyle.Common\Kyle.Common.csproj" />
+    <ProjectReference Include="..\Kyle.Extensions\Kyle.Extensions.csproj" />
+    <ProjectReference Include="..\Kyle.EntityFrameworkExtensions\Kyle.EntityFrameworkExtensions.csproj" />
+    <ProjectReference Include="..\Kyle.DependencyServiceCollection\Kyle.DependencyServiceCollection.csproj" />
+  </ItemGroup>
+</Project>

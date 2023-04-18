@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kyle.DependencyAutofac\Kyle.DependencyAutofac.csproj" />
+    <ProjectReference Include="..\Kyle.DependencyServiceCollection\Kyle.DependencyServiceCollection.csproj" />
+    <ProjectReference Include="..\Kyle.EntityFrameworkExtensions\Kyle.EntityFrameworkExtensions.csproj" />
+    <ProjectReference Include="..\Kyle.Extensions\Kyle.Extensions.csproj" />
+    <ProjectReference Include="..\Kyle.Infrastructure.CAP\Kyle.Infrastructure.CAP.csproj" />
+    <ProjectReference Include="..\Kyle.Infrastructure.Mediators\Kyle.Infrastructure.Mediators.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kyle.Infrastructure.Mapper\Kyle.Infrastructure.Mapper.csproj" />
+    <ProjectReference Include="..\Kyle.Members.Domain\Kyle.Members.Domain.csproj" />
+    <ProjectReference Include="..\Kyle.Scores.Domain\Kyle.Scores.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="IUserAppService.cs" />
+    <Compile Remove="IUserRegisterAppService.cs" />
+    <Compile Remove="UserInfoDto.cs" />
+  </ItemGroup>
+</Project>

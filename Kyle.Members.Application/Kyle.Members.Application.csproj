@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kyle.Common\Kyle.Common.csproj" />
+    <ProjectReference Include="..\Kyle.Encrypt.Application.Constructs\Kyle.Encrypt.Application.Constructs.csproj" />
+    <ProjectReference Include="..\Kyle.Encrypt.Application\Kyle.Encrypt.Application.csproj" />
+    <ProjectReference Include="..\Kyle.Extensions\Kyle.Extensions.csproj" />
+    <ProjectReference Include="..\Kyle.Identity.Application\Kyle.IdentityClient.csproj" />
+    <ProjectReference Include="..\Kyle.Infrastructure.Mapper\Kyle.Infrastructure.Mapper.csproj" />
+    <ProjectReference Include="..\Kyle.Members.Application.Constructs\Kyle.Members.Application.Constructs.csproj" />
+    <ProjectReference Include="..\Kyle.Members.Domain\Kyle.Members.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UserRegisterAppService.cs" />
+    <Compile Remove="UserAppService.cs" />
+  </ItemGroup>
+</Project>

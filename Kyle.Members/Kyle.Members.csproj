@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Kyle.Common\Kyle.Common.csproj" />
+      <ProjectReference Include="..\Kyle.DependencyAutofac\Kyle.DependencyAutofac.csproj" />
+      <ProjectReference Include="..\Kyle.Infrastructure.ConsulFramework\Kyle.Infrastructure.ConsulFramework.csproj" />
+      <ProjectReference Include="..\Kyle.Infrastructure.Secrets\Kyle.Infrastructure.Secrets.csproj" />
+      <ProjectReference Include="..\Kyle.LoggerSerilog\Kyle.LoggerSerilog.csproj" />
+      <ProjectReference Include="..\Kyle.Members.Application\Kyle.Members.Application.csproj" />
+      <ProjectReference Include="..\Kyle.Members.EntityFramework\Kyle.Members.EntityFramework.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Dockerfile">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Kyle.ApiClients.Domain\Kyle.ApiClients.Domain.csproj" />
+      <ProjectReference Include="..\Kyle.Weather.Domain.Shared\Kyle.Weather.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

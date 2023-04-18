@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Kyle.Common\Kyle.Common.csproj" />
+      <ProjectReference Include="..\Kyle.Infrastructure.Mapper\Kyle.Infrastructure.Mapper.csproj" />
+      <ProjectReference Include="..\Kyle.Todos.Application.Constructs\Kyle.Todos.Application.Constructs.csproj" />
+      <ProjectReference Include="..\Kyle.Todos.Domain\Kyle.Todos.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
